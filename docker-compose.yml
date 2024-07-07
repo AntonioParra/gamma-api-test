@@ -1,0 +1,13 @@
+name: test
+
+services:
+  api:
+    container_name: api-test
+    build:
+      dockerfile: Dockerfile
+    networks:
+      - gamma-network
+
+networks:
+  gamma-network:
+    external: true
