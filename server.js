@@ -2,7 +2,7 @@ const { createServer } = require('node:http')
 const port = 3000;
 
 const server = createServer((req, res) => {
-  fetch('http://rp-internal:80/internal/email/sendEmail', {
+  fetch('http://gamma-rp-internal:80/internal/email/sendEmail', {
     method: 'POST',
     body: JSON.stringify({
       to: '',
